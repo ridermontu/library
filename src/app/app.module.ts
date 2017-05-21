@@ -6,6 +6,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import {Route, RouterModule } from '@angular/router';
+
+
+import { appRoutes } from '../app/router-confing/approutes';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,8 @@ import { ServersComponent } from './servers/servers.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
