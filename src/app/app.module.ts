@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './views/registration/registration.component';
+import { BooksComponent } from './views/books/books.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
+    BooksComponent,
 
   ],
   imports: [
