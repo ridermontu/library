@@ -1,0 +1,14 @@
+.footerdiv {
+	height: 103px;
+	width: 100%;
+	background: #060606;
+	text-align: center;
+}
+
+
+.footertext {
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-top: 398px;
+}

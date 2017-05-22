@@ -1,0 +1,36 @@
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	
+}
+
+.logo {
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.menu {
+	float: right;
+	height: 50px;
+	width: 304px;
+	margin-top: -52px;
+	margin-right: 15px;
+}
+
+.option {
+	color: white;
+	font-size: 18px;
+	text-decoration: ivory;
+	font-weight: 700;
+	margin-left: 23px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a :HOVER {
+	color: yellow;
+}
