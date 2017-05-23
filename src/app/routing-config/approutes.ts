@@ -11,11 +11,7 @@ export const appRoutes:Routes=[
  //{ path: '',pathMatch:"full", redirectTo:"home"},
   { path: 'registration', component: RegistrationComponent,pathMatch:"full"},
   { path: 'home', component: AppComponent,pathMatch:"full"},
-
   { path: 'books' , component: BooksComponent, pathMatch: "full"},
-  {path: 'home' , component: AppComponent, pathMatch: "full"},
-
-  { path: 'login' , component: LoginComponent, pathMatch: "full"},
-  { path: 'home' , component: AppComponent, pathMatch: "full"}
+  { path: 'login' , component: LoginComponent, pathMatch: "full"}
 
 ]
