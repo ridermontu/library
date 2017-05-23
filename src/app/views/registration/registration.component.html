@@ -1,11 +1,10 @@
 
 <h1>Registration Form</h1>
-<!--
-<form [formGroup]="myform">
+
+<form [formGroup]="myForm" (ngSubmit)="save(myForm.value)">
 
 
-	First name:<br> <input type="text" [formControlName]="firstName"
-		name="firstName"> <br> 
+	First name:<br> <input type="text" formControlName="firstName" name="firstName"> <br> 
 		
 		
 		
@@ -18,4 +17,3 @@
 	<br>
 	<br> <input type="submit" value="Submit">
 </form>
- -->

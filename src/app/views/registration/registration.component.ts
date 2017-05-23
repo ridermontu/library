@@ -11,14 +11,14 @@ export class RegistrationComponent implements OnInit {
   constructor(private _fb: FormBuilder) { }
 
   ngOnInit() {
-
     this.myForm = this._fb.group({
      firstName: [''], lastName: [''], email: [''], mobile: [''], password: ['']
 
     })
+
   }
   save(data) {
-    console.log();
+    console.log(data);
   }
 }
 
