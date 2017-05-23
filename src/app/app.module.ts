@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {Route, RouterModule } from '@angular/router';
 
@@ -30,6 +30,7 @@ import { ProfileComponent } from './views/profile/profile.component';
     LoginComponent,
     ProfileComponent,
   ],
+  
   imports: [
     BrowserModule,
     FormsModule,
