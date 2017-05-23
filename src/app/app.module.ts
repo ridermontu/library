@@ -13,6 +13,7 @@ import { HeaderComponent } from './html-design/header/header.component';
 import { FooterComponent } from './html-design/footer/footer.component';
 import { NavigationBarComponent } from './html-design/navigation-bar/navigation-bar.component';
 import { LoginComponent } from './views/login/login.component';
+import { ProfileComponent } from './views/profile/profile.component';
 
 
 
@@ -27,6 +28,7 @@ import { LoginComponent } from './views/login/login.component';
     FooterComponent,
     NavigationBarComponent,
     LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
