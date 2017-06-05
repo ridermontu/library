@@ -1,6 +1,8 @@
 import { LoginService } from './login.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import {FormGroup, FormBuilder, FormControl} from '@angular/forms';
+import { Router, ActivatedRoute} from "@angular/router";
+import {CommonService } from "../../common/services/common.service"
 
 @Component({
   selector: 'app-login',
@@ -9,11 +11,12 @@ import {FormGroup, FormBuilder, FormControl} from '@angular/forms';
   providers:[LoginService]
 })
 export class LoginComponent implements OnInit {
-
- private users;
+public edited = false;
+   private users:string;
+  private userName:string;
   public myloginForm: FormGroup;
   
-  constructor(private _fb: FormBuilder, private loginservice :LoginService) { }
+  constructor(private _fb: FormBuilder,private router: Router,private commonService: CommonService, private route: ActivatedRoute, private loginservice :LoginService) { }
 
   ngOnInit() {
     
@@ -26,9 +29,18 @@ export class LoginComponent implements OnInit {
     }
     save(data){
   
-  console.log(data);
+  
   this.loginservice.getUser(data).subscribe(data1=>{
-     this.users=data;
+     this.users=data1.user.firstName;
+    
+    console.log( this.users);
+    localStorage.setItem("userfname",this.users);
+   // localStorage.setItem("login","true");
+    
+
+    this.router.navigate(['issuebook']);
+    this.commonService.changeLogin(true);
+    this.commonService.setuserFname(this.users);
     
 },
 error=>{

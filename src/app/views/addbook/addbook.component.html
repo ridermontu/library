@@ -1,0 +1,24 @@
+<h1>Add New Book</h1>
+
+<form [formGroup]="addbookform" (ngSubmit)="save(addbookform.value)">
+	<div [formGroupName]="book">
+
+		Book Name:<br> <input [formControlName]="title" type="text"
+			name="title"> <br> Author Name:<br> <input
+			[formControlName]="author" type="text" name="author"> <br>
+	</div>
+	Select Category<br>
+	<div formArrayName="categoryofbook">
+
+
+		<tr *ngFor=" let category of categories.controls; let i = index;" >
+			<div [formGroupName]="i">
+			<p>t</p>
+			</div>
+		</tr>
+	 <br> 
+		</div>
+	<p>Value: {{ addbookform.value | json }}</p>
+	<p></p>
+	<input type="submit" value="Submit">
+</form>

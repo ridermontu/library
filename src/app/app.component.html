@@ -1,11 +1,11 @@
-<div><app-header></app-header></div>
+<div><app-header *ngIf="login_user"></app-header></div>
 
-<div style="margin-top: 20px;"><app-navigation-bar></app-navigation-bar></div>
+<div *ngIf="login_user"  style="margin-top: 10px;"><app-navigation-bar  style="float:left;"></app-navigation-bar></div>
 
 
 <div class="router"><router-outlet></router-outlet></div>
 
-<div style="margin-top: 5%;" ><app-footer></app-footer></div>
+<div ><app-footer></app-footer></div>
 
 <!--
 <div>

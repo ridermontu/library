@@ -4,7 +4,7 @@
 
 
 <h1>Books</h1>
-
+<a routerLink="/addbook"><div class="button">Add Book</div></a>
 <table>
   <tr>
     <th>Id</th>
@@ -12,9 +12,11 @@
     <th>Author</th>
   </tr>
   <tr *ngFor=" let book of books">
-    <td>{{book.id}}</td>
-    <td>{{book.title}}</td>
-    <td>{{book.author}}</td>
+    <td><a href="">{{book.id}}</a></td>
+   <td><a href=""> {{book.title}}</a></td>
+    <td><a href="">{{book.author}}</a></td>
+    <td> <button class="butttonE"  type="submit">Delete</button></td>
+    <td> <button style="background-color: blue;" class="butttonE" type="submit">Edit</button></td>
   </tr>
   </table>
 

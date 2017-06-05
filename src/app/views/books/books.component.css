@@ -13,3 +13,40 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+
+.button{
+	width: 131px;
+background-color: #b73728;
+color: white;
+font-size: large;
+text-align: center;
+padding: 8px;
+margin-bottom: 10px;
+margin-left: 40%;
+text-decoration: none;
+	
+}
+
+.butttonE{
+	background-color: red;
+	color: white;
+	font-weight: 100;
+}
+
+.butttonE:HOVER{
+	background-color: white;
+	color: black;
+	font-weight: 100;
+}
+a{
+	text-decoration: none;
+}
+
+.button:HOVER {
+	color: blue;
+	background: white;
+	border: thin;
+	border-color: blue;
+	border-style: solid;
+}

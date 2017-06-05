@@ -4,6 +4,8 @@ h1 {
 
 
 .router{
-margin-top: -165px;
-margin-left: 30%
+float:initial;
+margin-left: 34%;
+width: 100%;
+
 }

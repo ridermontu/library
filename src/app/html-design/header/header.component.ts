@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
+import { CommonService } from '../../common/services/common.service';
+import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Router, ActivatedRoute} from "@angular/router";
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+private user:string;
+  
+ // userFname :EventEmitter<string> =new EventEmitter();
+  constructor(private commonService: CommonService) { 
+ console.log(localStorage.getItem("userfname"));
+   this.commonService.getuserFname().subscribe(data=>{
+    this.user=data
+   })
+    
+    
+  }
 
   ngOnInit() {
+    
+   
   }
 
 }

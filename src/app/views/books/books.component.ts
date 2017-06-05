@@ -21,10 +21,5 @@ error=>{
 });
   
   }
-//getdata(data){
-//  var books=data;
-//  
-//  
-//}
 
 }
